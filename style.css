@@ -62,19 +62,19 @@ body {
   max-width: 600px;
   width: 100%;
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 2vh;
 }
 
 .home-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 24px;
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 10px;
   background: linear-gradient(135deg, var(--primary-light), var(--secondary));
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 36px;
+  font-size: 24px;
   box-shadow: var(--shadow);
   animation: float 3s ease-in-out infinite;
 }
@@ -85,9 +85,9 @@ body {
 }
 
 .home-title {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -95,95 +95,27 @@ body {
 }
 
 .home-subtitle {
-  font-size: 1.1rem;
+  font-size: 0.85rem;
   color: var(--text-light);
-  margin-bottom: 32px;
-}
-
-.intro-card {
-  background: var(--card);
-  border-radius: var(--radius);
-  padding: 28px;
-  box-shadow: var(--shadow);
-  text-align: left;
-  margin-bottom: 24px;
-}
-
-.intro-card-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
-.intro-card-icon {
-  width: 44px;
-  height: 44px;
-  background: linear-gradient(135deg, var(--primary-light), var(--secondary));
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  flex-shrink: 0;
-}
-
-.intro-card h3 {
-  font-size: 1.1rem;
-  color: var(--text);
-  margin: 0;
-}
-
-.intro-desc {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.intro-card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.intro-card li {
-  font-size: 0.95rem;
-  color: var(--text-light);
-  padding: 10px 0;
-  padding-left: 36px;
-  position: relative;
-  line-height: 1.6;
-  display: flex;
-  align-items: center;
-}
-
-.intro-card li::before {
-  content: none;
-}
-
-.item-icon {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
+  margin-bottom: 14px;
 }
 
 .impact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.impact-grid.compact {
+  gap: 5px;
+  margin-bottom: 8px;
 }
 
 .impact-item {
   background: linear-gradient(135deg, #f5f3ff, #eff6ff);
   border-radius: var(--radius-sm);
-  padding: 16px 12px;
+  padding: 8px 4px;
   text-align: center;
   transition: var(--transition);
   border: 1px solid rgba(167, 139, 250, 0.1);
@@ -195,12 +127,12 @@ body {
 }
 
 .impact-icon {
-  font-size: 1.6rem;
-  margin-bottom: 6px;
+  font-size: 1.1rem;
+  margin-bottom: 1px;
 }
 
 .impact-text {
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   color: var(--text-light);
   font-weight: 500;
 }
@@ -208,53 +140,58 @@ body {
 .feature-row {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  margin-bottom: 24px;
+  gap: 8px;
+  margin-bottom: 10px;
   flex-wrap: wrap;
+}
+
+.feature-row.compact {
+  gap: 6px;
+  margin-bottom: 8px;
 }
 
 .feature-item {
   background: var(--card);
   border-radius: var(--radius-sm);
-  padding: 16px 20px;
+  padding: 6px 8px;
   box-shadow: var(--shadow);
   text-align: center;
   flex: 1;
-  min-width: 90px;
-  max-width: 160px;
+  min-width: 60px;
+  max-width: 90px;
   transition: var(--transition);
 }
 
 .feature-item:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
 }
 
 .feature-icon {
-  font-size: 1.8rem;
-  margin-bottom: 6px;
+  font-size: 1.1rem;
+  margin-bottom: 1px;
 }
 
 .feature-text {
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   color: var(--text-light);
   font-weight: 500;
 }
 
 .notice {
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
-  margin-bottom: 32px;
+  margin-bottom: 10px;
   padding: 0 10px;
 }
 
 /* ===== 按钮 ===== */
 .btn {
   display: inline-block;
-  padding: 14px 48px;
+  padding: 12px 40px;
   border-radius: 50px;
   border: none;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);

@@ -273,6 +273,7 @@ function selectOption(idx) {
   isAnimating = true;
 
   const options = document.querySelectorAll('.option');
+  options.forEach(opt => opt.classList.remove('selected'));
   options[idx].classList.add('selected');
 
   answers[questions[currentQuestion].id] = idx + 1; // A=1, B=2, C=3, D=4
