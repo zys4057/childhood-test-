@@ -62,19 +62,31 @@ body {
   max-width: 600px;
   width: 100%;
   text-align: center;
-  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 40px);
+  padding: 2vh 0;
+}
+
+.home-top {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-icon {
-  width: 52px;
-  height: 52px;
-  margin: 0 auto 10px;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 16px;
   background: linear-gradient(135deg, var(--primary-light), var(--secondary));
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 32px;
   box-shadow: var(--shadow);
   animation: float 3s ease-in-out infinite;
 }
@@ -85,9 +97,9 @@ body {
 }
 
 .home-title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -95,27 +107,27 @@ body {
 }
 
 .home-subtitle {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--text-light);
-  margin-bottom: 14px;
+  margin-bottom: 24px;
+}
+
+.home-middle {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .impact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 6px;
-  margin-bottom: 10px;
-}
-
-.impact-grid.compact {
-  gap: 5px;
-  margin-bottom: 8px;
+  gap: 10px;
+  margin-bottom: 16px;
 }
 
 .impact-item {
   background: linear-gradient(135deg, #f5f3ff, #eff6ff);
   border-radius: var(--radius-sm);
-  padding: 8px 4px;
+  padding: 16px 10px;
   text-align: center;
   transition: var(--transition);
   border: 1px solid rgba(167, 139, 250, 0.1);
@@ -127,12 +139,12 @@ body {
 }
 
 .impact-icon {
-  font-size: 1.1rem;
-  margin-bottom: 1px;
+  font-size: 1.6rem;
+  margin-bottom: 6px;
 }
 
 .impact-text {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   color: var(--text-light);
   font-weight: 500;
 }
@@ -140,63 +152,63 @@ body {
 .feature-row {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  margin-bottom: 10px;
+  gap: 10px;
   flex-wrap: wrap;
-}
-
-.feature-row.compact {
-  gap: 6px;
-  margin-bottom: 8px;
 }
 
 .feature-item {
   background: var(--card);
   border-radius: var(--radius-sm);
-  padding: 6px 8px;
+  padding: 14px 16px;
   box-shadow: var(--shadow);
   text-align: center;
   flex: 1;
-  min-width: 60px;
-  max-width: 90px;
+  min-width: 80px;
+  max-width: 120px;
   transition: var(--transition);
 }
 
 .feature-item:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
 }
 
 .feature-icon {
-  font-size: 1.1rem;
-  margin-bottom: 1px;
+  font-size: 1.6rem;
+  margin-bottom: 4px;
 }
 
 .feature-text {
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   color: var(--text-light);
   font-weight: 500;
 }
 
+.home-bottom {
+  width: 100%;
+}
+
 .notice {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   padding: 0 10px;
 }
 
 /* ===== 按钮 ===== */
 .btn {
   display: inline-block;
-  padding: 12px 40px;
+  padding: 16px 56px;
   border-radius: 50px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
   font-family: inherit;
   text-align: center;
+  width: 100%;
+  max-width: 320px;
 }
 
 .btn-primary {
@@ -553,7 +565,42 @@ body {
 /* ===== 响应式 ===== */
 @media (max-width: 480px) {
   .home-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+  
+  .home-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+  }
+  
+  .impact-item {
+    padding: 12px 8px;
+  }
+  
+  .impact-icon {
+    font-size: 1.4rem;
+  }
+  
+  .impact-text {
+    font-size: 0.8rem;
+  }
+  
+  .feature-item {
+    padding: 10px 12px;
+  }
+  
+  .feature-icon {
+    font-size: 1.4rem;
+  }
+  
+  .feature-text {
+    font-size: 0.75rem;
+  }
+  
+  .btn {
+    padding: 14px 40px;
+    font-size: 1.05rem;
   }
   
   .question-card {
@@ -567,11 +614,6 @@ body {
   .option {
     padding: 14px 16px;
     font-size: 0.9rem;
-  }
-  
-  .btn {
-    padding: 12px 36px;
-    font-size: 1rem;
   }
   
   .scores-grid {
@@ -589,6 +631,7 @@ body {
   }
   
   .home-content {
-    margin-top: 15vh;
+    min-height: auto;
+    padding: 5vh 0;
   }
 }

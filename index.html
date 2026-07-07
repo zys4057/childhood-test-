@@ -7,45 +7,52 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
+  <!-- 页面1：首页 -->
   <div id="page-home" class="page active">
     <div class="home-content">
-      <div class="home-icon">🌱</div>
-      <h1 class="home-title">童年印记人格测试</h1>
-      <p class="home-subtitle">你的童年经历，塑造了怎样的现在？</p>
-      <div class="impact-grid compact">
-        <div class="impact-item">
-          <div class="impact-icon">💭</div>
-          <div class="impact-text">情绪表达</div>
+      <div class="home-top">
+        <div class="home-icon">🌱</div>
+        <h1 class="home-title">童年印记人格测试</h1>
+        <p class="home-subtitle">你的童年经历，塑造了怎样的现在？</p>
+      </div>
+      <div class="home-middle">
+        <div class="impact-grid">
+          <div class="impact-item">
+            <div class="impact-icon">💭</div>
+            <div class="impact-text">情绪表达</div>
+          </div>
+          <div class="impact-item">
+            <div class="impact-icon">💕</div>
+            <div class="impact-text">亲密关系</div>
+          </div>
+          <div class="impact-item">
+            <div class="impact-icon">🔍</div>
+            <div class="impact-text">自我评价</div>
+          </div>
+          <div class="impact-item">
+            <div class="impact-icon">🌊</div>
+            <div class="impact-text">压力处理</div>
+          </div>
         </div>
-        <div class="impact-item">
-          <div class="impact-icon">💕</div>
-          <div class="impact-text">亲密关系</div>
-        </div>
-        <div class="impact-item">
-          <div class="impact-icon">🔍</div>
-          <div class="impact-text">自我评价</div>
-        </div>
-        <div class="impact-item">
-          <div class="impact-icon">🌊</div>
-          <div class="impact-text">压力处理</div>
+        <div class="feature-row">
+          <div class="feature-item">
+            <div class="feature-icon">📋</div>
+            <div class="feature-text">40道精选题目</div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🧠</div>
+            <div class="feature-text">6大维度分析</div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✨</div>
+            <div class="feature-text">12种人格类型</div>
+          </div>
         </div>
       </div>
-      <div class="feature-row compact">
-        <div class="feature-item">
-          <div class="feature-icon">📋</div>
-          <div class="feature-text">40道精选题目</div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon">🧠</div>
-          <div class="feature-text">6大维度分析</div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon">✨</div>
-          <div class="feature-text">12种人格类型</div>
-        </div>
+      <div class="home-bottom">
+        <p class="notice">本测试不是医学诊断，而是一种自我探索工具。</p>
+        <button class="btn btn-primary" onclick="startQuiz()">开始测试</button>
       </div>
-      <p class="notice">本测试不是医学诊断，而是一种自我探索工具。</p>
-      <button class="btn btn-primary" onclick="startQuiz()">开始测试</button>
     </div>
   </div>
 
